@@ -8,4 +8,6 @@ target 'LalamoveSwift' do
   # Pods for LalamoveSwift
   pod 'Alamofire', '~> 4.7' # For networking
   pod 'SnapKit', '~> 4.0.0' # For auto layout
+  pod 'AlamofireImage' # For image downloading
+  
 end

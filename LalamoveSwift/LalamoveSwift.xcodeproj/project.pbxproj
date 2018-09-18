@@ -10,6 +10,7 @@
 		133F101D214D85D500DCD77C /* DeliveriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F101C214D85D500DCD77C /* DeliveriesView.swift */; };
 		133F1020214D8B5600DCD77C /* DeliveriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F101F214D8B5600DCD77C /* DeliveriesTableViewCell.swift */; };
 		133F1022214D8B7900DCD77C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133F1021214D8B7900DCD77C /* UITableView+Extension.swift */; };
+		135DEE48215178B300839703 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135DEE47215178B300839703 /* UILabel+Extension.swift */; };
 		137E67DC214C321400D3D513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67DB214C321400D3D513 /* AppDelegate.swift */; };
 		137E67DE214C321400D3D513 /* DeliveriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67DD214C321400D3D513 /* DeliveriesListViewController.swift */; };
 		137E67E3214C321400D3D513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137E67E2214C321400D3D513 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		137E67F8214C3C4700D3D513 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67F6214C3C4700D3D513 /* Location.swift */; };
 		137E67FB214C3C7600D3D513 /* Deliveries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67FA214C3C7600D3D513 /* Deliveries.swift */; };
 		1863DA9A2150E60700C3FAE6 /* DeliveryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863DA992150E60700C3FAE6 /* DeliveryDetailView.swift */; };
+		1863DA9E21513B6F00C3FAE6 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863DA9D21513B6F00C3FAE6 /* Strings.swift */; };
 		18EF3AF7214FCF540092EF8F /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF3AF6214FCF540092EF8F /* Controllers.swift */; };
 		18EF3AFF214FE5540092EF8F /* DeliverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF3AFE214FE5540092EF8F /* DeliverDetailViewController.swift */; };
 		F1B26BCB7471A6A45DD52191 /* Pods_LalamoveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5BD0C8A74E7EFDC055E034 /* Pods_LalamoveSwift.framework */; };
@@ -28,6 +30,7 @@
 		133F101C214D85D500DCD77C /* DeliveriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesView.swift; sourceTree = "<group>"; };
 		133F101F214D8B5600DCD77C /* DeliveriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesTableViewCell.swift; sourceTree = "<group>"; };
 		133F1021214D8B7900DCD77C /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		135DEE47215178B300839703 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		137E67D8214C321400D3D513 /* LalamoveSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LalamoveSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137E67DB214C321400D3D513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		137E67DD214C321400D3D513 /* DeliveriesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveriesListViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		137E67F6214C3C4700D3D513 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		137E67FA214C3C7600D3D513 /* Deliveries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deliveries.swift; sourceTree = "<group>"; };
 		1863DA992150E60700C3FAE6 /* DeliveryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailView.swift; sourceTree = "<group>"; };
+		1863DA9D21513B6F00C3FAE6 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		18EF3AF6214FCF540092EF8F /* Controllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
 		18EF3AFE214FE5540092EF8F /* DeliverDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliverDetailViewController.swift; sourceTree = "<group>"; };
 		2E7B1C5FD1C635724597DA9B /* Pods-LalamoveSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LalamoveSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LalamoveSwift/Pods-LalamoveSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 		137E67DA214C321400D3D513 /* LalamoveSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1863DA9C215138EB00C3FAE6 /* Utilities */,
 				133F101E214D8B2600DCD77C /* Cells */,
 				18EF3AF5214FCD180092EF8F /* Controllers */,
 				133F1023214D8EDC00DCD77C /* Enums */,
@@ -122,8 +127,6 @@
 				137E67DB214C321400D3D513 /* AppDelegate.swift */,
 				137E67E2214C321400D3D513 /* Assets.xcassets */,
 				137E67E7214C321400D3D513 /* Info.plist */,
-				137E67ED214C337E00D3D513 /* Webservice.swift */,
-				137E67F2214C3AD000D3D513 /* Constants.swift */,
 			);
 			path = LalamoveSwift;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 			children = (
 				137E67F0214C35A300D3D513 /* Alamofire+Extension.swift */,
 				133F1021214D8B7900DCD77C /* UITableView+Extension.swift */,
+				135DEE47215178B300839703 /* UILabel+Extension.swift */,
 			);
 			path = Extenssions;
 			sourceTree = "<group>";
@@ -160,6 +164,16 @@
 				1863DA992150E60700C3FAE6 /* DeliveryDetailView.swift */,
 			);
 			path = DeliveryDetail;
+			sourceTree = "<group>";
+		};
+		1863DA9C215138EB00C3FAE6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				137E67ED214C337E00D3D513 /* Webservice.swift */,
+				137E67F2214C3AD000D3D513 /* Constants.swift */,
+				1863DA9D21513B6F00C3FAE6 /* Strings.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		18EF3AF5214FCD180092EF8F /* Controllers */ = {
@@ -321,11 +335,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LalamoveSwift/Pods-LalamoveSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,10 +358,12 @@
 			files = (
 				137E67F3214C3AD000D3D513 /* Constants.swift in Sources */,
 				1863DA9A2150E60700C3FAE6 /* DeliveryDetailView.swift in Sources */,
+				135DEE48215178B300839703 /* UILabel+Extension.swift in Sources */,
 				137E67DE214C321400D3D513 /* DeliveriesListViewController.swift in Sources */,
 				137E67FB214C3C7600D3D513 /* Deliveries.swift in Sources */,
 				18EF3AFF214FE5540092EF8F /* DeliverDetailViewController.swift in Sources */,
 				137E67DC214C321400D3D513 /* AppDelegate.swift in Sources */,
+				1863DA9E21513B6F00C3FAE6 /* Strings.swift in Sources */,
 				133F1020214D8B5600DCD77C /* DeliveriesTableViewCell.swift in Sources */,
 				137E67F1214C35A300D3D513 /* Alamofire+Extension.swift in Sources */,
 				137E67F8214C3C4700D3D513 /* Location.swift in Sources */,

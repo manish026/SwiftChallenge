@@ -24,38 +24,50 @@ class DeliveryDetailView: UIStackView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         mapView = MKMapView(frame: .zero)
-        labelDetail = UILabel(frame: .zero)
+        labelDetail = UILabel(with: .zero, defaultText: Text.noDescription)
+        
         addArrangedSubview(mapView!)
         addArrangedSubview(labelDetail)
+        
         axis = .vertical
         distribution = .fillEqually
-        labelDetail.center = CGPoint(x: 160, y: 285)
-        labelDetail.textAlignment = .center
-        labelDetail.backgroundColor = .white
-        labelDetail.text = "No description available"
+        
+        
+        
+        
     }
     
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// Sets details data
     
     func setData() {
         
         if let description = deliveryData.descriptionField {
             labelDetail.text = description
         }
+        showMapData()
         
-        let location = CLLocationCoordinate2DMake((deliveryData.location?.lat!)!, (deliveryData.location?.lng!)!)
+    }
+    
+    /// Displays marker on map
+    
+    func showMapData() {
+        guard let location = deliveryData.location else {
+            return
+        }
+        let coordinates = CLLocationCoordinate2DMake(location.lat!, location.lng!)
         
         let annotation = MKPointAnnotation()
-        annotation.coordinate = location
-        annotation.title = deliveryData.location?.address
-        let region = MKCoordinateRegion(center: location, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+        annotation.coordinate = coordinates
+        annotation.title = location.address
+        let region = MKCoordinateRegion(center: coordinates, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
         mapView?.setRegion(region, animated: true)
         mapView?.addAnnotation(annotation)
-        
         
     }
     

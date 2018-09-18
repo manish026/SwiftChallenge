@@ -7,17 +7,41 @@
 //
 
 import UIKit
+import AlamofireImage
+import SnapKit
 
 class DeliveriesTableViewCell: UITableViewCell {
     
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
+
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        self.textLabel?.numberOfLines = 0
         
     }
-
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func set(data: Deliveries) {
+
         self.textLabel?.text = data.descriptionField!
+        
+        if let imgUrlString = data.imageUrl, let imgUrl = URL(string: imgUrlString) {
+            
+            let filter = AspectScaledToFillSizeWithRoundedCornersFilter(
+                size: CGSize(width: 50, height: 50),
+                radius: 20.0
+            )
+            
+            imageView?.af_setImage(
+                withURL: imgUrl,
+                placeholderImage: #imageLiteral(resourceName: "placeholder"),
+                filter: filter)
+            
+            
+        }
     }
 
 }

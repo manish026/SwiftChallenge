@@ -11,6 +11,7 @@ import UIKit
 class DeliveriesListViewController: UIViewController {
 
     var deliveryView: DeliveriesView!
+    var offset = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,16 +30,29 @@ class DeliveriesListViewController: UIViewController {
         view = deliveryView
         
         deliveryView.didSelect = showDetail
+        
+        deliveryView.prefetch = getData
 
+    }
+    
+    func getData(offset: Int) {
+        
+        if offset >= self.deliveryView.data.count {
+            
+            self.offset = offset
+            getData()
+            
+        }
+        
     }
     
     /// Webservice call to get deleviry data
     func getData() {
         
-        Webservice.getDeliveries(offsetBy: 0, onSuccess: { [unowned self] (model) in
-            self.deliveryView.data = model
+        Webservice.getDeliveries(offsetBy: offset, onSuccess: { [unowned self] (model) in
+            self.deliveryView.data.append(contentsOf: model) 
         }) {
-            print($0)
+            self.deliveryView.error = $0
         }
         
     }

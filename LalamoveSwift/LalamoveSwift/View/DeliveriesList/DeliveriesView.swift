@@ -12,11 +12,21 @@ import SnapKit
 class DeliveriesView: UIStackView {
 
     private var tableView: UITableView!
-
     
-    var didSelect: ((Deliveries) -> Void)?
+    private var labelError: UILabel!
     
-    var data : [Deliveries]? {
+    var didSelect: ((Deliveries) -> ())?
+    var prefetch: ((Int)->())?
+    
+    var error: String! {
+        didSet {
+            labelError = UILabel(with: CGRect(x: 10, y: frame.size.height/2 , width: frame.size.width - 20, height: 20))
+            tableView.addSubview(labelError)
+            labelError.text = error
+        }
+    }
+    
+    var data : [Deliveries] = [] {
         didSet{
             tableView.reloadData()
         }
@@ -56,13 +66,24 @@ class DeliveriesView: UIStackView {
 extension DeliveriesView : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data?.count ?? 0
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.deque(cell: .deliveries, for: indexPath) as! DeliveriesTableViewCell
-        cell.set(data: data![indexPath.row])
+        cell.set(data: data[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        let index = indexPath.row
+        
+        if index >= data.count - 5  {
+            let offset  = ((index + 3) / Constants.fetchLimit) * Constants.fetchLimit
+            prefetch!(offset)
+        }
+        
     }
     
 }
@@ -73,8 +94,9 @@ extension DeliveriesView : UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         if let select = didSelect {
-            select(data![indexPath.row])
+            select(data[indexPath.row])
         }
     }
     
 }
+
