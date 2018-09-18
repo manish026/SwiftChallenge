@@ -19,12 +19,12 @@ struct Deliveries : Codable {
 		case imageUrl = "imageUrl"
 		case location
 	}
-	init(from decoder: Decoder) throws {
-		let values = try decoder.container(keyedBy: CodingKeys.self)
-		descriptionField = try values.decodeIfPresent(String.self, forKey: .descriptionField)
-		imageUrl = try values.decodeIfPresent(String.self, forKey: .imageUrl)
-		location = try Location(from: decoder)
-	}
+//    init(from decoder: Decoder) throws {
+//        let values = try decoder.container(keyedBy: CodingKeys.self)
+//        descriptionField = try values.decodeIfPresent(String.self, forKey: .descriptionField)
+//        imageUrl = try values.decodeIfPresent(String.self, forKey: .imageUrl)
+//        location = try Location(from: decoder)
+//    }
 
 
 }

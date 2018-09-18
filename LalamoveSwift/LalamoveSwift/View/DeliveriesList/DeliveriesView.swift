@@ -9,10 +9,10 @@
 import UIKit
 import SnapKit
 
-class DeliveriesView: UIView {
+class DeliveriesView: UIStackView {
 
     private var tableView: UITableView!
-    private var stackView: UIStackView!
+
     
     var didSelect: ((Deliveries) -> Void)?
     
@@ -24,30 +24,14 @@ class DeliveriesView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setStackView(with: frame)
         setTable(with: frame)
     }
     
     
-    required init?(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    /**
-     Sets up parent stackview, add all your views inside this stackview
-     
-     - Parameters:
-        - frame: Pass frame for UIStackView
-     */
-    
-    func setStackView(with frame: CGRect) {
-        stackView = UIStackView()
-        addSubview(stackView)
-        stackView.snp.makeConstraints({
-            $0.edges.equalToSuperview()
-        })
-    }
     
     /**
      Sets up tableview to show deliveries data
@@ -58,7 +42,7 @@ class DeliveriesView: UIView {
     func setTable(with frame: CGRect) {
         
         tableView = UITableView()
-        stackView.addArrangedSubview(tableView)
+        addArrangedSubview(tableView)
         tableView.register(forCell: .deliveries)
         tableView.delegate = self
         tableView.dataSource = self

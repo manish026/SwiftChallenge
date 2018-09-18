@@ -10,8 +10,8 @@ import Foundation
 struct Location : Codable {
 
 	let address : String?
-	let lat : Float?
-	let lng : Float?
+	let lat : Double?
+	let lng : Double?
 
 
 	enum CodingKeys: String, CodingKey {
@@ -19,12 +19,14 @@ struct Location : Codable {
 		case lat = "lat"
 		case lng = "lng"
 	}
-	init(from decoder: Decoder) throws {
-		let values = try decoder.container(keyedBy: CodingKeys.self)
-		address = try values.decodeIfPresent(String.self, forKey: .address)
-		lat = try values.decodeIfPresent(Float.self, forKey: .lat)
-		lng = try values.decodeIfPresent(Float.self, forKey: .lng)
-	}
+//    init(from decoder: Decoder) throws {
+//        let values = try decoder.container(keyedBy: CodingKeys.self)
+//        address = try values.decodeIfPresent(String.self, forKey: .address)
+//        lat = try values.decodeIfPresent(Double.self, forKey: .lat)
+//        lng = try values.decodeIfPresent(Double.self, forKey: .lng)
+//    }
 
 
 }
+
+

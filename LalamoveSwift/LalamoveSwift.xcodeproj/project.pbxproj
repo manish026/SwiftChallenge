@@ -18,6 +18,7 @@
 		137E67F3214C3AD000D3D513 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67F2214C3AD000D3D513 /* Constants.swift */; };
 		137E67F8214C3C4700D3D513 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67F6214C3C4700D3D513 /* Location.swift */; };
 		137E67FB214C3C7600D3D513 /* Deliveries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67FA214C3C7600D3D513 /* Deliveries.swift */; };
+		1863DA9A2150E60700C3FAE6 /* DeliveryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863DA992150E60700C3FAE6 /* DeliveryDetailView.swift */; };
 		18EF3AF7214FCF540092EF8F /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF3AF6214FCF540092EF8F /* Controllers.swift */; };
 		18EF3AFF214FE5540092EF8F /* DeliverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF3AFE214FE5540092EF8F /* DeliverDetailViewController.swift */; };
 		F1B26BCB7471A6A45DD52191 /* Pods_LalamoveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5BD0C8A74E7EFDC055E034 /* Pods_LalamoveSwift.framework */; };
@@ -37,6 +38,7 @@
 		137E67F2214C3AD000D3D513 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		137E67F6214C3C4700D3D513 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		137E67FA214C3C7600D3D513 /* Deliveries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deliveries.swift; sourceTree = "<group>"; };
+		1863DA992150E60700C3FAE6 /* DeliveryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailView.swift; sourceTree = "<group>"; };
 		18EF3AF6214FCF540092EF8F /* Controllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
 		18EF3AFE214FE5540092EF8F /* DeliverDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliverDetailViewController.swift; sourceTree = "<group>"; };
 		2E7B1C5FD1C635724597DA9B /* Pods-LalamoveSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LalamoveSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LalamoveSwift/Pods-LalamoveSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		133F101B214D83E500DCD77C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1863DA982150E5E100C3FAE6 /* DeliveryDetail */,
 				18EF3AFC214FD4CE0092EF8F /* DeliveriesList */,
 			);
 			path = View;
@@ -149,6 +152,14 @@
 				137E67F6214C3C4700D3D513 /* Location.swift */,
 			);
 			path = DeliveriesList;
+			sourceTree = "<group>";
+		};
+		1863DA982150E5E100C3FAE6 /* DeliveryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1863DA992150E60700C3FAE6 /* DeliveryDetailView.swift */,
+			);
+			path = DeliveryDetail;
 			sourceTree = "<group>";
 		};
 		18EF3AF5214FCD180092EF8F /* Controllers */ = {
@@ -330,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				137E67F3214C3AD000D3D513 /* Constants.swift in Sources */,
+				1863DA9A2150E60700C3FAE6 /* DeliveryDetailView.swift in Sources */,
 				137E67DE214C321400D3D513 /* DeliveriesListViewController.swift in Sources */,
 				137E67FB214C3C7600D3D513 /* Deliveries.swift in Sources */,
 				18EF3AFF214FE5540092EF8F /* DeliverDetailViewController.swift in Sources */,

@@ -26,11 +26,9 @@ class DeliveriesListViewController: UIViewController {
         deliveryView = DeliveriesView(frame: view.frame)
         view.addSubview(deliveryView)
         
-        deliveryView.didSelect = showDetail
+        view = deliveryView
         
-        deliveryView.snp.makeConstraints({ (make) in
-            make.edges.equalToSuperview()
-        })
+        deliveryView.didSelect = showDetail
 
     }
     
