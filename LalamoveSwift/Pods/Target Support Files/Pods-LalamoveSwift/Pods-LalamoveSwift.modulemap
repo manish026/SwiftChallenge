@@ -1,0 +1,6 @@
+framework module Pods_LalamoveSwift {
+  umbrella header "Pods-LalamoveSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
