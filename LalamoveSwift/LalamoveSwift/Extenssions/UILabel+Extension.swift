@@ -10,6 +10,9 @@ import UIKit
 
 extension UILabel {
     
+    /**
+        This is a convenience init method initializes the label with default text and sets background color to white & textColor to black & textAlignment to center
+     */
     convenience init(with frame: CGRect, defaultText string: String = "") {
         self.init(frame: frame)
         text = string

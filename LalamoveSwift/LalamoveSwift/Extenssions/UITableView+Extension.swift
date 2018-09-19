@@ -10,9 +10,17 @@ import UIKit
 
 extension UITableView {
     
+    /// Enum of cell identifier for a cell
+    
     enum TableViewCells: String {
         case deliveries
     }
+    
+    /**
+     This method registers cell based on thier type
+        - Parameters:
+            - cell: Type of cell to register for example deliveries
+     */
     
     func register(forCell cell : TableViewCells) {
         
@@ -24,6 +32,10 @@ extension UITableView {
         }
         
     }
+    
+    /**
+     This method deques cell based on thier type
+     */
     
     func deque(cell: TableViewCells, for index: IndexPath) -> UITableViewCell {
         return self.dequeueReusableCell(withIdentifier: cell.rawValue, for: index)

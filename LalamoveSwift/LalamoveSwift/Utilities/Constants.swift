@@ -8,10 +8,11 @@
 
 import Foundation
 
+/// All the constants values goes here
+
 struct Constants {
-    
     
     /// Fetch limit for deliveries
     static let fetchLimit = 10
-    
+
 }

@@ -13,18 +13,8 @@ class DeliveriesView: UIStackView {
 
     private var tableView: UITableView!
     
-    private var labelError: UILabel!
-    
     var didSelect: ((Deliveries) -> ())?
     var prefetch: ((Int)->())?
-    
-    var error: String! {
-        didSet {
-            labelError = UILabel(with: CGRect(x: 10, y: frame.size.height/2 , width: frame.size.width - 20, height: 20))
-            tableView.addSubview(labelError)
-            labelError.text = error
-        }
-    }
     
     var data : [Deliveries] = [] {
         didSet{
@@ -56,7 +46,6 @@ class DeliveriesView: UIStackView {
         tableView.register(forCell: .deliveries)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = .red
         
     }
     

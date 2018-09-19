@@ -15,7 +15,7 @@ class DeliverDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = Text.Titles.deliveryDetailsTitle
         setupDetailView()
     }
     

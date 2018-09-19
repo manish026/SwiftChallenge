@@ -26,16 +26,20 @@ class DeliveryDetailView: UIStackView {
         super.init(frame: frame)
         
         mapView = MKMapView(frame: .zero)
-        labelDetail = UILabel(with: .zero, defaultText: Text.noDescription)
+        labelDetail = UILabel(with: .zero, defaultText: Text.Messages.noDescription)
         
         addArrangedSubview(mapView!)
         addArrangedSubview(labelDetail)
         
-        axis = .vertical
+        if UIDevice.current.orientation.isLandscape {
+            // Landscape mode
+            axis = .horizontal
+        } else {
+            // Portrait mode
+            axis = .vertical
+        }
+        
         distribution = .fillEqually
-        
-        
-        
         
     }
     
