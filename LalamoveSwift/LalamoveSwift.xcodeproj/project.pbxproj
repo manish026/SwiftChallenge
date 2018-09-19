@@ -13,7 +13,6 @@
 		135DEE48215178B300839703 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135DEE47215178B300839703 /* UILabel+Extension.swift */; };
 		137E67DC214C321400D3D513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67DB214C321400D3D513 /* AppDelegate.swift */; };
 		137E67DE214C321400D3D513 /* DeliveriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67DD214C321400D3D513 /* DeliveriesListViewController.swift */; };
-		137E67E3214C321400D3D513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137E67E2214C321400D3D513 /* Assets.xcassets */; };
 		137E67EE214C337E00D3D513 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67ED214C337E00D3D513 /* Webservice.swift */; };
 		137E67F1214C35A300D3D513 /* Alamofire+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67F0214C35A300D3D513 /* Alamofire+Extension.swift */; };
 		137E67F3214C3AD000D3D513 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67F2214C3AD000D3D513 /* Constants.swift */; };
@@ -21,6 +20,9 @@
 		137E67FB214C3C7600D3D513 /* Deliveries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E67FA214C3C7600D3D513 /* Deliveries.swift */; };
 		1395C9762152BABE006D4B6E /* UIViewcontroller+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1395C9752152BABE006D4B6E /* UIViewcontroller+Extension.swift */; };
 		1395C9782152C77E006D4B6E /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1395C9772152C77E006D4B6E /* UIAlertController+Extension.swift */; };
+		1395C97A2152D43B006D4B6E /* VHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1395C9792152D43B006D4B6E /* VHUD+Extension.swift */; };
+		1395C97B2152D72C006D4B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137E67E2214C321400D3D513 /* Assets.xcassets */; };
+		1395C97D2152D7B2006D4B6E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1395C97C2152D7B2006D4B6E /* Launch Screen.storyboard */; };
 		1863DA9A2150E60700C3FAE6 /* DeliveryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863DA992150E60700C3FAE6 /* DeliveryDetailView.swift */; };
 		1863DA9E21513B6F00C3FAE6 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863DA9D21513B6F00C3FAE6 /* Strings.swift */; };
 		18EF3AF7214FCF540092EF8F /* ControllersEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EF3AF6214FCF540092EF8F /* ControllersEnum.swift */; };
@@ -45,6 +47,8 @@
 		137E67FA214C3C7600D3D513 /* Deliveries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deliveries.swift; sourceTree = "<group>"; };
 		1395C9752152BABE006D4B6E /* UIViewcontroller+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewcontroller+Extension.swift"; sourceTree = "<group>"; };
 		1395C9772152C77E006D4B6E /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		1395C9792152D43B006D4B6E /* VHUD+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VHUD+Extension.swift"; sourceTree = "<group>"; };
+		1395C97C2152D7B2006D4B6E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1863DA992150E60700C3FAE6 /* DeliveryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailView.swift; sourceTree = "<group>"; };
 		1863DA9D21513B6F00C3FAE6 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		18EF3AF6214FCF540092EF8F /* ControllersEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersEnum.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				137E67DB214C321400D3D513 /* AppDelegate.swift */,
 				137E67E2214C321400D3D513 /* Assets.xcassets */,
 				137E67E7214C321400D3D513 /* Info.plist */,
+				1395C97C2152D7B2006D4B6E /* Launch Screen.storyboard */,
 			);
 			path = LalamoveSwift;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				135DEE47215178B300839703 /* UILabel+Extension.swift */,
 				1395C9752152BABE006D4B6E /* UIViewcontroller+Extension.swift */,
 				1395C9772152C77E006D4B6E /* UIAlertController+Extension.swift */,
+				1395C9792152D43B006D4B6E /* VHUD+Extension.swift */,
 			);
 			path = Extenssions;
 			sourceTree = "<group>";
@@ -293,7 +299,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				137E67E3214C321400D3D513 /* Assets.xcassets in Resources */,
+				1395C97D2152D7B2006D4B6E /* Launch Screen.storyboard in Resources */,
+				1395C97B2152D72C006D4B6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,12 +350,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/VHUD/VHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -370,6 +379,7 @@
 				137E67FB214C3C7600D3D513 /* Deliveries.swift in Sources */,
 				18EF3AFF214FE5540092EF8F /* DeliverDetailViewController.swift in Sources */,
 				137E67DC214C321400D3D513 /* AppDelegate.swift in Sources */,
+				1395C97A2152D43B006D4B6E /* VHUD+Extension.swift in Sources */,
 				1863DA9E21513B6F00C3FAE6 /* Strings.swift in Sources */,
 				133F1020214D8B5600DCD77C /* DeliveriesTableViewCell.swift in Sources */,
 				137E67F1214C35A300D3D513 /* Alamofire+Extension.swift in Sources */,
@@ -497,7 +507,6 @@
 			baseConfigurationReference = 2E7B1C5FD1C635724597DA9B /* Pods-LalamoveSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USJQ28Q29N;
 				INFOPLIST_FILE = LalamoveSwift/Info.plist;
@@ -514,7 +523,6 @@
 			baseConfigurationReference = E3D99113461F0C16218D578E /* Pods-LalamoveSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = USJQ28Q29N;
 				INFOPLIST_FILE = LalamoveSwift/Info.plist;

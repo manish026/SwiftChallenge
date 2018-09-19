@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import VHUD
 
 class DeliveriesListViewController: UIViewController {
 
@@ -52,12 +53,20 @@ class DeliveriesListViewController: UIViewController {
     /// Webservice call to get deleviry data
     func getData() {
         
+        if offset == 0 {
+            
+           VHUD.show()
+            
+        }
+        
         Webservice.getDeliveries(offsetBy: offset, onSuccess: { [unowned self] (model) in
             
+            VHUD.dismiss(1.0, 1.0)
             self.deliveryView.data.append(contentsOf: model)
             
         }) { [unowned self] (message) in
             
+            VHUD.dismiss(1.0, 1.0)
             let alert = UIAlertController(with: message)
             self.present(alert)
             
@@ -79,5 +88,7 @@ class DeliveriesListViewController: UIViewController {
     }
 
 }
+
+
 
 

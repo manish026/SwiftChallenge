@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LalamoveSwift/Controllers/DeliveriesList/DeliveriesListViewController.swift"
-            timestampString = "559074808.0403841"
+            timestampString = "559077444.200247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "getData(offset:)"
             landmarkType = "7">
          </BreakpointContent>

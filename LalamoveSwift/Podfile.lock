@@ -3,17 +3,20 @@ PODS:
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
   - SnapKit (4.0.0)
+  - VHUD (1.3.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlamofireImage
   - SnapKit (~> 4.0.0)
+  - VHUD
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  VHUD: 77add7891a2b02edba0790bb6be3b28e8961c85b
 
-PODFILE CHECKSUM: 4d7b4baca781b2d08b85565dbe39a09b85e57b5e
+PODFILE CHECKSUM: 2a2ef513b26b7d6f99f613bb58d59a97b524fbc8
 
 COCOAPODS: 1.3.1
